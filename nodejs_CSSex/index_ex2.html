@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul { color: teal; }
+ 
+        ul.first {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: yellow;
+            margin-top: initial;
+        }
+        ul.first li { float: left; }
+
+        ul.second { list-style: square; }
+
+        ul.third {
+            list-style-image: url(tree02.jpg);
+            list-style-position: inherit;
+        }
+
+        ol { color: blue; }
+        ol li:nth-child(even) { color: red;}
+        
+
+        ol:last-child {
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 10px;
+        }
+
+        .hide { display: none; }
+        .show:hover+.hide { display: block; color: red; }
+
+        a:link { text-decoration: none;  background-color:white}
+        a:visited { background-color: teal;}
+        a:hover { text-decoration: underline; }
+       
+
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <ul class="first">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+    </ul>
+
+    <ul class="second">
+        <li class="show">Item One</li>
+        <ul class="hide">
+            <li>la la la</li>
+            <li>Ba Ba Ba</li>
+            <li>ca ca ca</li>
+        </ul>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+    </ul>
+
+    <ul class="third">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+    </ul>
+
+    <ul>
+        <li><a href="https://www.cbc.ca" target="_blank">CBC news</a></li>
+        <li><a href="https://www.ctvnews.ca" target="_blank">CTV news</a></li>
+        <li><a href="https://globalnews.ca">Global news</a></li>
+        <li><a href="https://www.bbc.com">BBC news</a></li>
+    </ul>
+
+    <ol>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+    </ol>
+
+    <ol>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+        <li>Item Six</li>
+        <li>Item Seven</li>
+        <li>Item Eight</li>
+    </ol>
+
+
+</body>
+
+</html>
